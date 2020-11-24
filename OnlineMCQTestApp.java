@@ -1,4 +1,4 @@
-package Projects;
+
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -76,6 +76,26 @@ class OnlineMCQTestApp extends JFrame implements ActionListener {
 				btnBookmark.setText("Result");
 			setVisible(false);
 			setVisible(true);
+		}
+
+		for (int i = 0, y = 1; i < x; i++, y++) {
+			if (e.getActionCommand().equals("Bookmark" + y)) {
+				if (check())
+					count = count + 1;
+				now = current;
+				current = m[y];
+				set();
+				((JButton) e.getSource()).setEnabled(false);
+				current = now;
+			}
+		}
+
+		if (e.getActionCommand().equals("Result")) {
+			if (check())
+				count = count + 1;
+			current++;
+			JOptionPane.showMessageDialog(this, "correct answers= " + count);
+			System.exit(0);
 		}
 	
 	}
