@@ -99,4 +99,47 @@ class OnlineMCQTestApp extends JFrame implements ActionListener {
 		}
 	
 	}
+
+	// SET Questions with options
+	void set() {
+		radioButton[4].setSelected(true);
+		if (current == 0) {
+			label.setText("Que1:  Which of the following is not introduced with Java 8?");
+			radioButton[0].setText("Stream API");
+			radioButton[1].setText("Serialization");
+			radioButton[2].setText("Spliterator");
+			radioButton[3].setText("Lambda Expression");
+		}
+		if (current == 1) {
+			label.setText("Que2:  Which feature of java 7 allows to not explicitly close IO resource?");
+			radioButton[0].setText("try catch finally");
+			radioButton[1].setText("IOException");
+			radioButton[2].setText("AutoCloseable");
+			radioButton[3].setText("Streams");
+		}
+		if (current == 2) {
+			label.setText("Que3: SessionFactory is a thread-safe object.");
+			radioButton[0].setText("true");
+			radioButton[1].setText("false");
+			radioButton[2].setText("don't know");
+			radioButton[3].setText("false");
+		}
+		if (current == 3) {
+			label.setText("Que4: Which is the new method introduced in java 8 to iterate over a collection?");
+			radioButton[0].setText("for (String i : StringList)");
+			radioButton[1].setText("foreach (String i : StringList)");
+			radioButton[2].setText("StringList.forEach()");
+			radioButton[3].setText("List.for()");
+		}
+		if (current == 4) {
+			label.setText("Que5:  What is the substitute of Rhino javascript engine in Java 8?");
+			radioButton[0].setText(" Nashorn");
+			radioButton[1].setText("V8");
+			radioButton[2].setText("Inscript");
+			radioButton[3].setText("Narcissus");
+		}
+		label.setBounds(30, 40, 450, 20);
+		for (int i = 0, j = 0; i <= 90; i += 30, j++)
+			radioButton[j].setBounds(50, 80 + i, 200, 20);
+	}
 }
