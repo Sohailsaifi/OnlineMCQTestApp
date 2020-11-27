@@ -159,6 +159,20 @@ class OnlineMCQTestApp extends JFrame implements ActionListener {
 			radioButton[2].setText("SessionManagement");
 			radioButton[3].setText("Session");
 		}
+		if (current == 8) {
+			label.setText("Que9: SessionFactory is a thread-safe object.");
+			radioButton[0].setText("true");
+			radioButton[1].setText("false");
+			radioButton[2].setText("don't know");
+			radioButton[3].setText("false");
+		}
+		if (current == 9) {
+			label.setText("Que10: Which of the following is not a state of object in Hibernate?");
+			radioButton[0].setText("Attached()");
+			radioButton[1].setText("Detached()");
+			radioButton[2].setText("Persistent()");
+			radioButton[3].setText("Transient()");
+		}
 		label.setBounds(30, 40, 450, 20);
 		for (int i = 0, j = 0; i <= 90; i += 30, j++)
 			radioButton[j].setBounds(50, 80 + i, 200, 20);
