@@ -177,4 +177,29 @@ class OnlineMCQTestApp extends JFrame implements ActionListener {
 		for (int i = 0, j = 0; i <= 90; i += 30, j++)
 			radioButton[j].setBounds(50, 80 + i, 200, 20);
 	}
+
+	// declare right answers.
+	boolean check() {
+		if (current == 0)
+			return (radioButton[1].isSelected());
+		if (current == 1)
+			return (radioButton[1].isSelected());
+		if (current == 2)
+			return (radioButton[0].isSelected());
+		if (current == 3)
+			return (radioButton[2].isSelected());
+		if (current == 4)
+			return (radioButton[0].isSelected());
+		if (current == 5)
+			return (radioButton[0].isSelected());
+		if (current == 6)
+			return (radioButton[1].isSelected());
+		if (current == 7)
+			return (radioButton[2].isSelected());
+		if (current == 8)
+			return (radioButton[0].isSelected());
+		if (current == 9)
+			return (radioButton[0].isSelected());
+		return false;
+	}
 }
