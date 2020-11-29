@@ -202,4 +202,7 @@ class OnlineMCQTestApp extends JFrame implements ActionListener {
 			return (radioButton[0].isSelected());
 		return false;
 	}
+	public static void main(String s[]) {
+		new OnlineMCQTestApp("Online Test App");
+	}
 }
