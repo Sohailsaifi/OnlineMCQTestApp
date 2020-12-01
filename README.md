@@ -1,2 +1,2 @@
 # OnlineMCQTestApp
-An intereactive java application for the online examinations containing the MCQ questions.
+An interactive java application for the online examinations containing the MCQ questions.
